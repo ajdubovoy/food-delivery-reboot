@@ -26,7 +26,7 @@ Today, we're going to build a multi-part app, focusing on **restaurants**. We'll
 
 Define a class `Restaurant` in a new file `app/models/restaurant.rb`.
 
-Our `Restaurant` model should have two instance variables:
+Our `Restaurant` model should have 3 instance variables:
 
 - `@id`
 - `@name` as a `String`
@@ -135,7 +135,7 @@ _Same format as Part 1, but we're going to add a new level of complexity._
 
 Define a class `Review` in a new file `app/models/review.rb`.
 
-Our `Review` model should have two instance variables:
+Our `Review` model should have 4 instance variables:
 
 - `@id`
 - `@content` as a `String`. This is what the text of the review actually is.
