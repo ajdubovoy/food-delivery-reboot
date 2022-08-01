@@ -31,6 +31,8 @@ Our `Restaurant` model should have two instance variables:
 - `@name` as a `String`
 - `@price` as an `Integer`. The price should be a number, ideally between 1 and 5 (it's like in Google Maps how it prints out "€" or "€€€€€").
 
+---
+
 _Review with the teacher as a group._
 
 ## The `RestaurantRepository` Repository
@@ -46,6 +48,8 @@ It should have the following methods:
 - `#all`, which should return all the restaurants in the app.
 
 Please note that I've already filled out a `data/restaurants.csv` file for you with some sample data.
+
+---
 
 _Review with the teacher as a group._
 
@@ -81,6 +85,8 @@ It should have the following methods:
 - A `#list` action
 - A `#find(id)` method that returns a particular `Restaurant` instance, given an id.
 
+---
+
 _Review with the teacher as a group._
 
 ## Testing Our Feature
@@ -110,9 +116,15 @@ ruby app.rb
 
 in the Terminal, your application should start.
 
+---
+
 _Review with the teacher as a group._
 
+---
+
 _----------BREAK FOR LUNCH 🌮_------------
+
+---
 
 ## Part 2
 
@@ -128,6 +140,8 @@ Our `Review` model should have two instance variables:
 - `@content` as a `String`. This is what the text of the review actually is.
 - `@rating` as an `Integer`. The price should be a number, ideally between 1 and 5 (it's like in Google Maps how it prints out "⭐" or ⭐⭐⭐⭐⭐"").
 - `@restaurant` as a `Restaurant` instance. This is the restaurant the review is written for. It should NOT be an integer, a string, a line in the CSV, anything else. It should be an instance of your existing `Restaurant` model.
+
+---
 
 _Review with the teacher as a group._
 
@@ -146,6 +160,8 @@ It should have the following methods:
   - Should call a `#save_csv` method that re-writes the CSV file (since we changed data and need to save it).
 
 Please note that I've already filled out a `data/reviews.csv` file for you with some sample data. Definitely look at this file before beginning.
+
+---
 
 _Review with the teacher as a group._
 
