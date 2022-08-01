@@ -5,6 +5,7 @@ TO START (run in Terminal):
 ```zsh
 cd ~/code/$GITHUB_USERNAME
 git clone git@github.com:ajdubovoy/food-delivery-reboot.git
+cd food-delivery-reboot
 rm -rf .git
 git init
 ```
