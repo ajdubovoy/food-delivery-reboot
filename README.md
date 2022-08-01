@@ -1,8 +1,13 @@
 # Food Delivery OOP Reboot
 
-TO START:
+TO START (run in Terminal):
 
-`cd ~/code/$GITHUB_USERNAME`
+```zsh
+cd ~/code/$GITHUB_USERNAME
+git clone git@github.com:ajdubovoy/food-delivery-reboot.git
+rm -rf .git
+git init
+```
 
 We'll build a new challenge together, modelled on the concepts of OOP.
 
