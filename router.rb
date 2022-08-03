@@ -1,7 +1,8 @@
 # router.rb
 class Router
-  def initialize(restaurants_controller)
+  def initialize(restaurants_controller, reviews_controller)
     @restaurants_controller = restaurants_controller
+    @reviews_controller = reviews_controller
     @running = true
   end
 
@@ -18,12 +19,14 @@ class Router
 
   def print_menu
     puts "1. List all restaurants"
+    puts "2. Add a new review for a restaurant"
     puts "9. Quit"
   end
 
   def route_action(user_choice)
     case user_choice
     when 1 then @restaurants_controller.list
+    when 2 then @reviews_controller.create
     when 9 then @running = false
     end
   end
