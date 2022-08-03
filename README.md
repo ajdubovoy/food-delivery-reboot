@@ -32,6 +32,8 @@ Our `Restaurant` model should have 3 instance variables:
 - `@name` as a `String`
 - `@price` as an `Integer`. The price should be a number, ideally between 1 and 5 (it's like in Google Maps how it prints out "€" or "€€€€€").
 
+Like in Food Delivery, the `#initialize(attributes)` should take _one argument_ (an attributes hash). It should _not_ take the id, name, and price as separate arguments.
+
 ---
 
 _Review with the teacher as a group._
