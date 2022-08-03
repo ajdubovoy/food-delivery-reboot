@@ -86,9 +86,7 @@ In order to build this feature, you will need to add a `RestaurantsView` class i
 
 It should have the following methods:
 
-- An `#initialize(restaurant_repository)` method.
-- A `#list` action
-- A `#find(id)` method that returns a particular `Restaurant` instance, given an id.
+- A `#display_list(restaurants)` action
 
 ---
 
