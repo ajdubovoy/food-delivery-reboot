@@ -50,6 +50,7 @@ It should have the following methods:
   - should store a `@csv_file_path` variable that can be a String like `"data/restaurants.csv"`.
   - Should call a `#load_csv` method that opens the `@csv_file_path` and fills up the `@restaurants` Array with the restaurants that are already stored.
 - `#all`, which should return all the restaurants in the app.
+- `#find(id)`. When given an `id` (as an integer) it should return the `Restaurant` instance with that id.
 
 Please note that I've already filled out a `data/restaurants.csv` file for you with some sample data.
 
@@ -85,9 +86,7 @@ In order to build this feature, you will need to add a `RestaurantsView` class i
 
 It should have the following methods:
 
-- An `#initialize(restaurant_repository)` method.
-- A `#list` action
-- A `#find(id)` method that returns a particular `Restaurant` instance, given an id.
+- A `#display_list(restaurants)` action
 
 ---
 
@@ -155,7 +154,7 @@ Define a `ReviewRepository` class in a new file `app/repositories/review_reposit
 
 It should have the following methods:
 
-- An `#initialize(csv_file_path)` method.
+- An `#initialize(csv_file_path, restaurant_repository)` method.
   - Should define a variable `@reviews` that is an array of `Review` instances (this is the main purpose of a repository).
   - should store a `@csv_file_path` variable that can be a String like `"data/reviews.csv"`.
   - Should call a `#load_csv` method that opens the `@csv_file_path` and fills up the `@reviews` Array with the reviews that are already stored. **How will you handle the `restaurant_id` column?**
@@ -200,9 +199,8 @@ To build steps 3-5, we'll want to print some information, so you'll need a `Revi
 
 In order to build this feature, you will need to add a `ReviewsView` class in a new file `app/views/reviews_view.rb`.
 
-It should have the following methods:
+It should have the following method:
 
-- An `#initialize(review_repository)` method.
 - An `#ask_for(stuff)` method (or separate methods for asking for an index, a content, and a rating).
 
 ---
