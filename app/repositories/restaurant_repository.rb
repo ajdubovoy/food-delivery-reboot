@@ -7,7 +7,7 @@ class RestaurantRepository
     @restaurants = []
     # ^ the most important part
     @csv_file_path = csv_file_path # "data/restaurants.csv"
-    load_csv
+    load_csv if File.exist?(@csv_file_path)
   end
 
   def all
