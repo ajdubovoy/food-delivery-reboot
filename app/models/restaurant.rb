@@ -1,11 +1,16 @@
 class Restaurant
-  attr_reader :name, :price
+  attr_reader :name, :price, :reviews
   attr_accessor :id
 
   def initialize(attributes = {})
     @id = attributes[:id]
     @name = attributes[:name]
     @price = attributes[:price]
+    @reviews = []
+  end
+
+  def add_review(review)
+    @reviews << review
   end
 end
 

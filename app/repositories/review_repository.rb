@@ -32,9 +32,11 @@ class ReviewRepository
       # the restaurant_id is an integer, but we want the Restaurant instance
       # We need to use RestaurantRepository#find
       restaurant_id = row[:restaurant_id].to_i
-      row[:restaurant] = @restaurant_repository.find(restaurant_id)
+      restaurant = @restaurant_repository.find(restaurant_id)
+      row[:restaurant] = restaurant
 
       review = Review.new(row)
+      restaurant.add_review(review)
       @reviews << review
     end
   end

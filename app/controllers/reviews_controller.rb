@@ -24,6 +24,7 @@ class ReviewsController
       rating: rating_they_typed,
       restaurant: restaurant_they_picked
     )
+    restaurant_they_picked.add_review(review)
     # Save that review to the repository.
     @review_repository.add(review)
   end
