@@ -50,6 +50,7 @@ It should have the following methods:
   - should store a `@csv_file_path` variable that can be a String like `"data/restaurants.csv"`.
   - Should call a `#load_csv` method that opens the `@csv_file_path` and fills up the `@restaurants` Array with the restaurants that are already stored.
 - `#all`, which should return all the restaurants in the app.
+- `#find(id)`. When given an `id` (as an integer) it should return the `Restaurant` instance with that id.
 
 Please note that I've already filled out a `data/restaurants.csv` file for you with some sample data.
 
